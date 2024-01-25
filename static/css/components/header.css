@@ -1,0 +1,138 @@
+#header {
+  word-spacing: -0.3rem;
+  letter-spacing: 0.05rem;
+  background-color: var(--clr-black);
+  border-bottom: 1px solid var(--clr-black-var-3);
+
+  position: fixed;
+  width: 100%;
+  min-width: 360px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__title {
+  font-weight: 400;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.title__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__hamburger {
+  cursor: pointer;
+}
+
+.header__menu {
+  z-index: 2;
+
+  border-top: 1px solid var(--clr-white);
+  transition: all 0.4s ease-out;
+
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: calc(100dvh - 3rem);
+}
+
+.menu__container {
+  background-color: var(--clr-black);
+  /* opacity: 0.9; */
+
+  width: 100%;
+  flex: 0 1 auto;
+}
+
+.menu__link {
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__closer {
+  background-color: var(--clr-black);
+  opacity: 0.8;
+
+  cursor: pointer;
+  width: 100%;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link__container {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding-inline: 1rem; /* beware of this or it will fuck you up */
+}
+.link__container:hover,
+.link__container:focus {
+  background-color: var(--clr-blue-dark);
+}
+
+.hidden {
+  width: 0%;
+  left: -768px;
+}
+
+.menu__container li {
+  border-bottom: 1px solid var(--clr-black-var-3);
+}
+
+@media (min-width: 768px) {
+  #header {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .header__hamburger {
+    display: none;
+  }
+
+  .header__menu {
+    all: unset;
+  }
+
+  .menu__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .header__closer {
+    display: none;
+  }
+
+  .menu__container li {
+    border-bottom: none;
+  }
+}
+
+/* struct
+#header 
+.header__container
+.header__title
+.title__link
+.header__hamburger
+.hamburger__img
+.header__menu
+.menu__container
+.menu__link
+.header__closer
+.link__container
+.hidden
+*/

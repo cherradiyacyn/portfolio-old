@@ -1,0 +1,64 @@
+.no-wrap {
+  white-space: nowrap;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+
+  background-color: var(--clr-blue-bright);
+  font-weight: 500;
+  flex-shrink: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--clr-blue-dark);
+}
+
+.btn-alt {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  color: var(--clr-white);
+  background-color: var(--clr-black-var-2);
+  font-weight: 500;
+  flex-shrink: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+.btn-alt:hover,
+.btn-alt:focus {
+  background-color: var(--clr-black-var-3);
+}
+
+.link {
+  color: var(--clr-blue-bright);
+  font-weight: 600;
+}
+.link:hover,
+.link:focus {
+  color: var(--clr-blue-dark);
+}
+
+.debug {
+  border: 1px solid red;
+}
+
+.card {
+  background-color: var(--clr-black-var-2);
+  border: 1px solid var(--clr-black-var-2);
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.card:hover,
+.card:focus {
+  border: 1px solid var(--clr-blue-bright);
+}
+
+.scroll-disable {
+  overflow: hidden;
+}

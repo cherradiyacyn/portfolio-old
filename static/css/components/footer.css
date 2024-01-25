@@ -1,0 +1,20 @@
+#footer {
+  margin-top: auto; /* fixed footer @ bottom */
+  border-top: 1px solid var(--clr-black-var-3);
+  padding-inline: 1rem;
+  min-width: 360px;
+}
+
+.footer__container {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  #footer {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
